@@ -10,15 +10,31 @@
     font-weight: bold;
     text-transform: uppercase;
     
-  }
-
-  .container {
+    .container {
     align-items: center;
     padding: 15px;
     font-size: 25px;
     margin: 0 auto;
     
   }
+
+     .nav-links {
+    font-size: 16px;
+    
+
+    li {
+      transition: .3s ease;
+
+      &:hover {
+        color: #ec4899;
+        cursor: pointer;
+      }
+    }
+  }
+
+  }
+
+  
 
   // .line-divisor {
   //   width: 100%;
@@ -73,18 +89,6 @@
 
 
 
-  .nav-links {
-    font-size: 16px;
-    
-
-    li {
-      transition: .3s ease;
-
-      &:hover {
-        color: #ec4899;
-        cursor: pointer;
-      }
-    }
-  }
+ 
 
  
