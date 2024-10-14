@@ -1,7 +1,7 @@
 const skills = [
             {
                 'name' : 'html',
-                'image_path' : '/skills/html.png'
+                'image_path' : 'skills/html.png'
             },
             {
                 'name' : 'css',

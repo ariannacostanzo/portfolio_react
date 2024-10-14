@@ -10,7 +10,7 @@ const Skills = () => {
                <h3>{skill.name}</h3>
                <figure className="flex items-center justify-center">
                  <img
-                   src={`${skill.image_path}`}
+                   src={`/${skill.image_path}`}
                    alt={skill.name}
                    className="skill-img"
                  />

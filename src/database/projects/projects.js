@@ -53,9 +53,6 @@ const projects = [
     image_key: "whatsapp",
     images: [
       {
-        path: "whatsapp (1).png",
-      },
-      {
         path: "whatsapp (2).png",
       },
       {

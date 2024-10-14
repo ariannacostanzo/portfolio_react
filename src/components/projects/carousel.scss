@@ -1,0 +1,41 @@
+// modificati 
+
+
+
+.carousel .control-dots .dot {
+  background: #ec4899;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #ec4899;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #ec4899;
+}
+
+.carousel .thumb {
+  border: 3px solid #ec4899;
+}
+
+.carousel .thumb:focus {
+  border: 3px solid #ec4899;
+}
+
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 3px solid #261c52;
+}
+
+.carousel .thumbs-wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbs-wrapper .axis-vertical {
+  display: none;
+}
