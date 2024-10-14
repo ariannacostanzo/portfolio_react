@@ -12,11 +12,11 @@ function App() {
     <>
       <Header></Header>
       <Jumbo></Jumbo>
-      <Divisor sectionName="su di me"></Divisor>
+      <Divisor sectionName="su di me" idName="about"></Divisor>
       <AboutMe></AboutMe>
-      <Divisor sectionName="abilità"></Divisor>
+      <Divisor sectionName="abilità" idName="skills"></Divisor>
       <Skills></Skills>
-      <Divisor sectionName="progetti"></Divisor>
+      <Divisor sectionName="progetti" idName="projects"></Divisor>
       <Projects></Projects>
     </>
   );

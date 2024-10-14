@@ -1,6 +1,7 @@
 import './projects.scss';
 import projects from '../../database/projects/projects';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 const Projects = () => {
 
 
@@ -22,6 +23,14 @@ const Projects = () => {
                    <p
                      dangerouslySetInnerHTML={{ __html: project.description }}
                    ></p>
+                   <div className="flex justify-center items-center">
+                     <a href={project.link} target='_blank'>
+                       Github{" "}
+                       <FontAwesomeIcon
+                         icon={faSquareGithub}
+                       />
+                     </a>
+                   </div>
                  </div>
                </li>
              ))}

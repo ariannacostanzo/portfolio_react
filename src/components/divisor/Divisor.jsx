@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import './divisor.scss';
 
-const Divisor = ({sectionName}) => {
+const Divisor = ({sectionName, idName}) => {
      return (
        <>
-         <div className="divisor">
+         <div className="divisor" id={idName}>
            <span>{ sectionName }</span>
          </div>
        </>
