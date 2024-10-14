@@ -30,18 +30,28 @@ const AboutMe = () => {
                    iniziato a studiare programmazione spinta dalla mia curiosità
                    iniziale nel settore della programmazione dei videogiochi,
                    scoprendo in seguito una vera passione per lo{" "}
-                   <span className="color-purple">sviluppo web</span>. La
-                   soddisfazione nel creare e dare vita a progetti attraverso il
-                   processo di sviluppo ha risvegliato in me una chiara
-                   consapevolezza della direzione che desideravo prendere nel
-                   mio percorso professionale. Ho completato il corso da full
-                   Stack Web Developer di{" "}
+                   <span className="color-purple">sviluppo web</span>. Ho
+                   dedicato molti mesi allo studio da autodidatta di
+                   <span className="color-purple"> Python</span> ,{" "}
+                   <span className="color-purple">HTML </span>,{" "}
+                   <span className="color-purple">CSS</span> e{" "}
+                   <span className="color-purple">JavaScript</span>, gettando
+                   solide basi per la mia carriera. Successivamente, ho
+                   completato il corso da full Stack Web Developer di{" "}
                    <span className="color-purple">Boolean</span> e sono stata
                    selezionata per il corso di{" "}
-                   <span className="color-purple">Experis su Java</span>. Ora,
-                   con entusiasmo e dedizione, sono pronta a mettere in pratica
-                   le mie competenze, affrontare nuove sfide e crescere in un
-                   ambiente lavorativo dinamico.
+                   <span className="color-purple">Experis su Java</span>.
+                   Parallelamente alla mia formazione ufficiale, ho intrapreso
+                   lo studio autonomo di tecnologie come{" "}
+                   <span className="color-purple">Node.js</span>,{" "}
+                   <span className="color-purple">Prisma</span> ,{" "}
+                   <span className="color-purple">Express</span> e{" "}
+                   <span className="color-purple">React</span> , ampliando
+                   ulteriormente le mie competenze e arricchendo il mio percorso
+                   come sviluppatrice full-stack. Ora, con entusiasmo e
+                   dedizione, sono pronta a mettere in pratica le mie
+                   competenze, affrontare nuove sfide e crescere in un ambiente
+                   lavorativo dinamico.
                  </p>
                  <div className="flex items-center justify-between py-5">
                    <div className="icons-container pr-5">
@@ -72,10 +82,9 @@ const AboutMe = () => {
                        Contattami
                        <FontAwesomeIcon icon={faIdCardClip} className="ml-2" />
                      </a>
-                     <a className="text-center">
+                     <a className="text-center" href="/cv_Arianna_Costanzo.pdf" download>
                        <button>
                          Scarica CV
-                         {/* da fare  */}
                          <FontAwesomeIcon icon={faDownload} className="ml-2" />
                        </button>
                      </a>
