@@ -2,6 +2,7 @@ import AboutMe from "./components/aboutMe/AboutMe"
 import Divisor from "./components/divisor/Divisor"
 import Header from "./components/header/Header"
 import Jumbo from "./components/jumbotron/Jumbo"
+import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 
 
@@ -16,6 +17,7 @@ function App() {
       <Divisor sectionName="abilità"></Divisor>
       <Skills></Skills>
       <Divisor sectionName="progetti"></Divisor>
+      <Projects></Projects>
     </>
   );
 }
