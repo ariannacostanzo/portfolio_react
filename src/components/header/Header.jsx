@@ -6,13 +6,26 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
 
+// States 
 const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768);
 
+// Functions
 const handleResize = () => {
   setIsMediumScreen(window.innerWidth >= 768); 
 };
 
+const handleScrollTo = (e, id) => {
+  e.preventDefault();
+  const target = document.getElementById(id);
+  const offset = target.getBoundingClientRect().top + window.scrollY - 100;
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth", 
+  });
+}
+
+// Effects
 useEffect(() => {
   window.addEventListener("resize", handleResize);
 
@@ -50,16 +63,30 @@ useEffect(() => {
               <div className="line-divisor"></div>
               <ul className="nav-links pl-3">
                 <li className="mb-3">
-                  <a href="#about">Su di me</a>
+                  <a href="#about" onClick={(e) => handleScrollTo(e, "about")}>
+                    Su di me
+                  </a>
                 </li>
                 <li className="mb-3">
-                  <a href="#skills">Abilità</a>
+                  <a href="#skills" onClick={(e) => handleScrollTo(e, "skills")}>
+                    Abilità
+                  </a>
                 </li>
                 <li className="mb-3">
-                  <a href="#projects">Progetti</a>
+                  <a
+                    href="#projects"
+                    onClick={(e) => handleScrollTo(e, "projects")}
+                  >
+                    Progetti
+                  </a>
                 </li>
                 <li className="mb-3">
-                  <a href="#contact">Contattami</a>
+                  <a
+                    href="#contact"
+                    onClick={(e) => handleScrollTo(e, "contact")}
+                  >
+                    Contattami
+                  </a>
                 </li>
               </ul>
             </div>
@@ -70,16 +97,30 @@ useEffect(() => {
             <div>
               <ul className="hidden md:flex gap-7 nav-links">
                 <li>
-                  <a href="#about">Su di me</a>
+                  <a href="#about" onClick={(e) => handleScrollTo(e, "about")}>
+                    Su di me
+                  </a>
                 </li>
                 <li>
-                  <a href="#skills">Abilità</a>
+                  <a href="#skills" onClick={(e) => handleScrollTo(e, "skills")}>
+                    Abilità
+                  </a>
                 </li>
                 <li>
-                  <a href="#projects">Progetti</a>
+                  <a
+                    href="#projects"
+                    onClick={(e) => handleScrollTo(e, "projects")}
+                  >
+                    Progetti
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact">Contattami</a>
+                  <a
+                    href="#contact"
+                    onClick={(e) => handleScrollTo(e, "contact")}
+                  >
+                    Contattami
+                  </a>
                 </li>
               </ul>
             </div>
