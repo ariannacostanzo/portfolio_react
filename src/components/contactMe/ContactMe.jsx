@@ -6,7 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const ContactMe = () => {
      return (
        <>
-         <section id="contactme-section">
+         <section id="contactme-section" className='pb-10'>
            <div className="text-center mb-5">
              <h4 className="color-green my-5">Numero di telefono</h4>
              <p>(+39) 3274436674</p>
