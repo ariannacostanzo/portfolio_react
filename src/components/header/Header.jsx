@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-// da fare diventa nero allo scorrere della pagina, fare scrollare in modo smooth
 
 const Header = () => {
 
 // States 
 const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768);
+const [isScrolled, setIsScrolled] = useState(false);
 
 // Functions
 const handleResize = () => {
@@ -25,7 +25,23 @@ const handleScrollTo = (e, id) => {
   });
 }
 
+const handleScrollY = () => {
+  if (window.scrollY > 120) {
+    setIsScrolled(true);
+  } else {
+    setIsScrolled(false);
+  }
+};
+
 // Effects
+
+useEffect(() => {
+   window.addEventListener("scroll", handleScrollY);
+   return () => {
+     window.removeEventListener("scroll", handleScrollY);
+   };
+}, [])
+
 useEffect(() => {
   window.addEventListener("resize", handleResize);
 
@@ -37,7 +53,7 @@ useEffect(() => {
 
   return (
     <>
-      <header>
+      <header className={isScrolled ? "header-scrolled" : ""}>
         <div className="container flex justify-between items-center">
           <div className="logo color-green">
             <a>&lt;/arianna &gt;</a>
@@ -68,7 +84,10 @@ useEffect(() => {
                   </a>
                 </li>
                 <li className="mb-3">
-                  <a href="#skills" onClick={(e) => handleScrollTo(e, "skills")}>
+                  <a
+                    href="#skills"
+                    onClick={(e) => handleScrollTo(e, "skills")}
+                  >
                     Abilità
                   </a>
                 </li>
@@ -102,7 +121,10 @@ useEffect(() => {
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" onClick={(e) => handleScrollTo(e, "skills")}>
+                  <a
+                    href="#skills"
+                    onClick={(e) => handleScrollTo(e, "skills")}
+                  >
                     Abilità
                   </a>
                 </li>
