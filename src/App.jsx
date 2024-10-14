@@ -1,4 +1,5 @@
 import AboutMe from "./components/aboutMe/AboutMe"
+import ContactMe from "./components/contactMe/ContactMe";
 import Divisor from "./components/divisor/Divisor"
 import Header from "./components/header/Header"
 import Jumbo from "./components/jumbotron/Jumbo"
@@ -18,6 +19,8 @@ function App() {
       <Skills></Skills>
       <Divisor sectionName="progetti" idName="projects"></Divisor>
       <Projects></Projects>
+      <Divisor sectionName="contattami" idName="contact"></Divisor>
+      <ContactMe></ContactMe>
     </>
   );
 }
