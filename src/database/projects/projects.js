@@ -9,6 +9,7 @@ const projects = [
                 Come ultima opzione è possibile salvare in formato <span class="color-purple">png</span> il <span class="color-purple">disegno</span>.`,
     is_visible: 1,
     link: "https://github.com/ariannacostanzo/Pixel-Art",
+    image_key: "pixel-art",
     images: [
       {
         path: "pixel-art (1).png",
@@ -49,6 +50,7 @@ const projects = [
                 degli utenti, con la data. `,
     is_visible: 1,
     link: "https://github.com/ariannacostanzo/whatsapp",
+    image_key: "whatsapp",
     images: [
       {
         path: "whatsapp (1).png",
@@ -91,6 +93,7 @@ const projects = [
                 da inserire.<br><br> Se tutti i dati sono corretti l'ordine è correttamente inviato e l'utente verrà indirizzato in una nuova pagina di <span class="color-purple">riepilogo ordine</span>, a cui si potrà
                 accedere comodamente tramite un'icona che apparirà nella homepage.`,
     is_visible: 1,
+    image_key: "deliveboo-frontend",
     link: "https://github.com/ariannacostanzo/vue-deliveboo",
     images: [
       {
@@ -130,6 +133,7 @@ const projects = [
                 nonchè l'immagine ingrandita. Infine l'utente può modificare qualsiasi aspetto del piatto e aggiungerne di nuovi al menù. <br><br>In alto a sinistra, nella barra di navigazione è possibile visualizzare la pagina
                 degli <span class="color-purple">ordini ricevuti</span> negli ultimi 12 mesi, e cliccando sul pulsante dettaglio è possibile anche visualizzare il contenuto dell 'ordine. <br><br>Infine abbiamo implementato un grafico che mostri <span class="color-purple">le statistiche degli ordini</span> ricevuti nell'ultimo anno.`,
     is_visible: 1,
+    image_key: "deliveboo-backend",
     link: "https://github.com/ariannacostanzo/laravel-deliveboo",
     images: [
       {
@@ -169,6 +173,7 @@ const projects = [
                 filtrare i pokemon attraverso una serie di parametri: il tipo, oppure i tipi, il range numerico in cui si trova, se possiede una specifica abilità ed infine le dimensioni.`,
     is_visible: 1,
     link: "https://github.com/ariannacostanzo/pokemon",
+    image_key: "pokemon",
     images: [
       {
         path: "pokemon (1).png",
@@ -211,6 +216,7 @@ const projects = [
                 <span class="color-purple">creazione di un nuovo fumetto</span>. Se tutti i campi superano la validazione verremo reindirizzati alla pagina di <span class="color-purple">dettaglio del fumetto</span> appena creato.<br><br>I fumetti possono essere cancellati, essi finiranno nel <span class="color-purple">cestino</span>, in cui abbiamo
                 la possibilità di cancellarli del tutto oppure <span class="color-purple">ripristinarli</span>.`,
     is_visible: 1,
+    image_key: "dc-comics",
     link: "https://github.com/ariannacostanzo/laravel-dc-comics",
     images: [
       {
@@ -249,6 +255,7 @@ const projects = [
                 <br><br> Un <span class="color-purple">gioco a livelli</span>, in cui il giocatore si muove in avanti, evitando i nemici, per raggiungere il tesoro e passare al prossimo livello. Ogni livello successivo i nemici si muoveranno più velocemente oppure aumenteranno di numero;
                 <br><br> Ed infine una <span class="color-purple">calcolatrice</span> che può eseguire operazioni matematiche elementari o più complesse.`,
     is_visible: 1,
+    image_key: "progetti-in-python",
     link: "https://github.com/ariannacostanzo/laravel-dc-comics",
     images: [
       {
@@ -300,6 +307,7 @@ const projects = [
     description: `Un'imitazione di Spotify sviluppata in <span class="color-purple">HTML e CSS</span> puro. Questa applicazione è puramente una vetrina, progettata per mostrare le potenzialità del design web senza l'uso di JavaScript o backend. Gli utenti possono esplorare un layout simile a quello di Spotify, completo di sezioni per artisti, album e playlist. Il design è stato realizzato con grande attenzione ai dettagli per creare un'esperienza visivamente accattivante e moderna, utilizzando esclusivamente HTML e CSS per la struttura e la presentazione. `,
     is_visible: 1,
     link: "https://github.com/ariannacostanzo/laravel-dc-comics",
+    image_key: "spotify",
     images: [
       {
         path: "spotify (1).png",

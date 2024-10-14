@@ -1,0 +1,17 @@
+#contactme-section {
+    h4 {
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+
+  .icon {
+          font-size: 40px;
+          cursor: pointer;
+          transition: .2s ease-in-out;
+
+          &:hover {
+              scale: 1.1;
+          }
+      }
+}
