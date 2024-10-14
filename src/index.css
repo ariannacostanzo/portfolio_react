@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-size: cover;
+    color: white;
+    background: #261c52;
+    background: radial-gradient(circle, #261c52 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    /* height: 130vh; */
+    font-family: "Figtree", sans-serif;
+    
+}
+
+/* utils  */
+
+.color-green {
+    color: #10d3b3;
+  }
+
+  .color-purple {
+    color: #ec4899;
+  }
+
+  
