@@ -20,56 +20,56 @@
     
   }
 
-  .line-divisor {
-    width: 100%;
-    background-color: white;
-    height: 1px;
-    margin: 67.5px 0 30px 0px;
-  }
+  // .line-divisor {
+  //   width: 100%;
+  //   background-color: white;
+  //   height: 1px;
+  //   margin: 67.5px 0 30px 0px;
+  // }
 
-  .arrow {
-    height: 2px;
-    background-color: white;
-    width: 25px;
-    margin-bottom: 7px;
-    border-radius: 5px;
-    transition: .3s ease;
-  }
+  // .arrow {
+  //   height: 2px;
+  //   background-color: white;
+  //   width: 25px;
+  //   margin-bottom: 7px;
+  //   border-radius: 5px;
+  //   transition: .3s ease;
+  // }
 
-  #hamburger-menu {
-    cursor: pointer;
-  }
+  // #hamburger-menu {
+  //   cursor: pointer;
+  // }
 
-  #hamburger-menu:hover .arrow {
-    background-color: #ec4899;
+  // #hamburger-menu:hover .arrow {
+  //   background-color: #ec4899;
     
-  }
+  // }
 
-  #sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    background-color: black;
-    // padding: 50px 0 0 20px;
-  }
+  // #sidebar {
+  //   position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 200px;
+  //   background-color: black;
+  //   // padding: 50px 0 0 20px;
+  // }
 
-  #close-btn {
-    position: absolute;
-    top: 18px;
-    right: 10px;
-    cursor: pointer;
-    transition: .3s ease;
-  }
+  // #close-btn {
+  //   position: absolute;
+  //   top: 18px;
+  //   right: 10px;
+  //   cursor: pointer;
+  //   transition: .3s ease;
+  // }
 
-  #close-btn:hover {
-    color: #ec4899;
-  }
+  // #close-btn:hover {
+  //   color: #ec4899;
+  // }
 
-  .header-scrolled {
-    background-color: black;
-  }
+  // .header-scrolled {
+  //   background-color: black;
+  // }
 
 
 
