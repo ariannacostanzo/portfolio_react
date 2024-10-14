@@ -15,6 +15,7 @@ function App() {
       <AboutMe></AboutMe>
       <Divisor sectionName="abilità"></Divisor>
       <Skills></Skills>
+      <Divisor sectionName="progetti"></Divisor>
     </>
   );
 }
