@@ -16,12 +16,24 @@ const skills = [
                 'image_path' : 'skills/react.png'
             },
             {
+                'name' : 'node',
+                'image_path' : 'skills/node.png'
+            },
+            {
+                'name' : 'prisma',
+                'image_path' : 'skills/prisma.png'
+            },
+            {
                 'name' : 'java',
                 'image_path' : 'skills/java.png'
             },
             {
                 'name' : 'laravel',
                 'image_path' : 'skills/laravel.png'
+            },
+            {
+                'name' : 'inertia',
+                'image_path' : 'skills/inertia.svg'
             },
             {
                 'name' : 'sass',
