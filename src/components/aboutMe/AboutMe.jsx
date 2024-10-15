@@ -75,17 +75,22 @@ const AboutMe = () => {
                      </a>
                    </div>
                    <div className="buttons-container flex flex-col md:flex-row gap-4">
-                     <a
-                       href="mailto:costanzo.arianna@outlook.it"
-                       className="text-center"
-                     >
-                       Contattami
-                       <FontAwesomeIcon icon={faIdCardClip} className="ml-2" />
+                    {/* contact button  */}
+                     <a href="mailto:costanzo.arianna@outlook.it">
+                       <button className="slide-btn">
+                         <span className="icon-container">
+                           <FontAwesomeIcon icon={faIdCardClip} />
+                         </span>
+                         <p className="slide-btn-text">Contattami</p>
+                       </button>
                      </a>
-                     <a className="text-center" href="/cv_Arianna_Costanzo.pdf" download>
-                       <button>
-                         Scarica CV
-                         <FontAwesomeIcon icon={faDownload} className="ml-2" />
+                     {/* download cv button  */}
+                     <a href="/cv_Arianna_Costanzo.pdf" download>
+                       <button className="slide-btn">
+                         <span className="icon-container">
+                           <FontAwesomeIcon icon={faDownload} />
+                         </span>
+                         <p className="slide-btn-text">Scarica CV</p>
                        </button>
                      </a>
                    </div>

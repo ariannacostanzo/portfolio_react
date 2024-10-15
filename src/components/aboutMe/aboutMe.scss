@@ -11,36 +11,17 @@
     object-fit: cover;
   }
 
-  .writing-text {
-    font-size: 25px;
-    max-width: 800px;
+  .info-about-me {
 
-    h1 {
-      font-size: 40px;
-        font-weight: bold;
+    p {
+      font-size: 16px;
+      text-align: start;
     }
-
     @media screen and (min-width: 760px) {
-      h1 {
-          font-size: 60px;
+      p {
+          font-size: 17px;
         }
     }
-
-    span {
-      font-weight: bold;
-      position: relative;
-
-      &.color-purple::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: -12px;
-        width: 10px;
-        height: 100%;
-        background-color: #ec4899;
-      }
-    }
-
   }
 
 
@@ -67,21 +48,4 @@
     }
   }
 
-  .buttons-container {
-
-    a {
-      background: rgb(236, 72, 153);
-      background: linear-gradient(90deg, rgba(236, 72, 153, 1) 0%, rgba(38, 28, 82, 1) 100%);
-      margin: 10px 10px 10px 0;
-      padding: 15px 25px;
-      border-radius: 35px;
-      font-size: 18px;
-      font-weight: bold;
-      border: 1px solid rgb(236, 72, 153);
-
-      
-    }
-
-     
-  }
 }

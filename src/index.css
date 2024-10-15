@@ -6,7 +6,7 @@ body {
     background-size: cover;
     color: white;
     background: #261c52;
-    background: radial-gradient(circle, #261c52 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, #120d27 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     /* height: 130vh; */
     font-family: "Figtree", sans-serif;
@@ -23,4 +23,71 @@ body {
     color: #ec4899;
   }
 
+/* buttons  */
+
+.slide-btn {
+  width: 180px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid #ec4899;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.icon-container {
   
+  width: 45px;
+  height: 40px;
+  background: rgb(236, 72, 153);
+  background: linear-gradient(90deg, rgba(236, 72, 153, 1) 0%, rgba(38, 28, 82, 1) 100%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+  margin-left: 5px;
+}
+
+.icon-b {
+  border-radius: 1px;
+}
+
+.slide-btn-text {
+  height: 100%;
+  width: 100px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 14px;
+}
+
+.slide-btn:hover .icon-container {
+  width: 175px;
+  transition-duration: 0.3s;
+  flex-grow: 1;
+}
+
+.slide-btn:hover .slide-btn-text {
+  transform: translate(50px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+
+.slide-btn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}

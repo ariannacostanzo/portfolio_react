@@ -126,7 +126,7 @@ const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
 
                    {/* tecnologie */}
                    <div className="tech-container">
-                    <h4 className='color-purple'>Tecnologie utilizzate:</h4>
+                     <h4 className="color-purple">Tecnologie utilizzate:</h4>
                      <ul>
                        {project.techs.map((tech, i) => (
                          <li key={`project${project.name}tech${i}`}>{tech}</li>
@@ -136,11 +136,12 @@ const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
                    {/* link a github  */}
                    <div className="flex justify-end items-center mt-5">
                      <a href={project.link} target="_blank">
-                       Vedi su Github
-                       <FontAwesomeIcon
-                         icon={faSquareGithub}
-                         className="ml-2"
-                       />
+                       <button className="slide-btn">
+                         <span className="icon-container">
+                           <FontAwesomeIcon icon={faSquareGithub} />
+                         </span>
+                         <p className="slide-btn-text">Vedi su Github</p>
+                       </button>
                      </a>
                    </div>
                  </div>
