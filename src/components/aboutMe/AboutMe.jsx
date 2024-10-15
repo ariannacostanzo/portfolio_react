@@ -5,6 +5,7 @@ import { faIdCardClip } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import Button from '../button/Button';
 
 const AboutMe = () => {
      return (
@@ -75,23 +76,13 @@ const AboutMe = () => {
                      </a>
                    </div>
                    <div className="buttons-container flex flex-col md:flex-row gap-4">
-                    {/* contact button  */}
+                     {/* contact button  */}
                      <a href="mailto:costanzo.arianna@outlook.it">
-                       <button className="slide-btn">
-                         <span className="icon-container">
-                           <FontAwesomeIcon icon={faIdCardClip} />
-                         </span>
-                         <p className="slide-btn-text">Contattami</p>
-                       </button>
+                       <Button icon={faIdCardClip} text="Contattami"></Button>
                      </a>
                      {/* download cv button  */}
                      <a href="/cv_Arianna_Costanzo.pdf" download>
-                       <button className="slide-btn">
-                         <span className="icon-container">
-                           <FontAwesomeIcon icon={faDownload} />
-                         </span>
-                         <p className="slide-btn-text">Scarica CV</p>
-                       </button>
+                       <Button icon={faDownload} text="Scarica CV"></Button>
                      </a>
                    </div>
                  </div>

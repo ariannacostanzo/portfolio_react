@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import Button from '../button/Button';
 const Projects = () => {
 
 const [isModalOpen, setIsModalOpen] = useState(false);
@@ -136,12 +137,7 @@ const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
                    {/* link a github  */}
                    <div className="flex justify-end items-center mt-5">
                      <a href={project.link} target="_blank">
-                       <button className="slide-btn">
-                         <span className="icon-container">
-                           <FontAwesomeIcon icon={faSquareGithub} />
-                         </span>
-                         <p className="slide-btn-text">Vedi su Github</p>
-                       </button>
+                       <Button icon={faSquareGithub} text="Vedi su Github"></Button>
                      </a>
                    </div>
                  </div>
