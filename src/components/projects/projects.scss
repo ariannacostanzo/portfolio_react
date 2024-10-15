@@ -68,19 +68,42 @@
         .close-btn {
             position: absolute;
             top: 65px;
-            right: 160px;
-            font-size: 2rem;
+            right: 20px;
+            font-size: 2.5rem;
             cursor: pointer;
         }
 
         figure {
             width: 80%;
             height: 80vh;
+            position: relative;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+        }
+
+        .arrows {
+            position: absolute;
+                bottom: 50%;
+                font-size: 35px;
+                transform: translate(0, 50%);
+                cursor: pointer;
+                transition: .4s ease;
+
+
+            &:hover {
+                color: #261c52;
+            }
+
+            &.left {
+                left: 15px;
+            }
+
+            &.right {
+                right: 15px;
             }
         }
     }

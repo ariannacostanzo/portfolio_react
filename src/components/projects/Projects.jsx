@@ -7,34 +7,82 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './carousel.scss'
 import { useState } from 'react';
 import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCircleLeft } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
 
 const [isModalOpen, setIsModalOpen] = useState(false);
-const [currentImageUrl, setCurrentImageUrl] = useState(null);
+const [currentImagesArray, setCurrentImagesArray] = useState([]);
+const [currentIndex, setCurrentIndex] = useState(0);
 
-const openModal = (img) => {
+const openModal = (index, array) => {
   setIsModalOpen(true);
-  setCurrentImageUrl(img)
+  setCurrentImagesArray(array)
+  setCurrentIndex(index)
     
 }
+
+const closeModal = () => {
+  setIsModalOpen(false);
+  setCurrentImagesArray([]);
+  setCurrentIndex(0)
+}
+
+const moveCarousel = (side) => {
+  if (side === "right") {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex + 1) % currentImagesArray.length 
+    );
+  } else {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + currentImagesArray.length) % currentImagesArray.length 
+    );
+  }
+}
+
+const fixedPath = () => {
+  const currentImage = currentImagesArray[currentIndex]?.path;
+  const folder = currentImage.replace(/\s*\(.*\)/, "").replace(".png", "") + '';
+  return folder
+} 
+
+
+
+const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
 
      return (
        <>
          {isModalOpen && (
-           <div className="img-modal" onClick={() => setIsModalOpen(false)}>
-             <span className="close-btn color-purple">
+           <div className="img-modal">
+             <span
+               className="close-btn color-purple"
+               onClick={closeModal}
+             >
                <FontAwesomeIcon icon={faX} />
              </span>
              <figure>
-               <img src={currentImageUrl} alt="img" />
+               <span
+                 className="arrows left color-purple"
+                 onClick={() => moveCarousel("left")}
+               >
+                 <FontAwesomeIcon icon={faCircleLeft} />
+               </span>
+               <img src={`/projects/${fixedPath()}/${currentImageUrl}`} alt="img" />
+               <span
+                 className="arrows right color-purple"
+                 onClick={() => moveCarousel("right")}
+               >
+                 <FontAwesomeIcon icon={faCircleRight} />
+               </span>
              </figure>
            </div>
          )}
 
-         <div className="container mx-auto">
-           <ul className="flex items-center justify-center gap-8 flex-wrap projects-list">
+         <div className="container mx-auto" >
+           <div className="flex items-center justify-center gap-8 flex-wrap projects-list">
              {projects.map((project, i) => (
-               <li
+               <div
                  key={`project${i}`}
                  className="project-card w-full md:w-4/5 lg:w-3/5"
                >
@@ -44,17 +92,17 @@ const openModal = (img) => {
                        useKeyboardArrows={true}
                        statusFormatter={(currentItem, total) => {
                          return (
-                           <p>
+                           <>
                              {currentItem} di {total}
-                           </p>
+                           </>
                          );
                        }}
                      >
                        {project.images.map((image, index) => (
                          <div
                            onClick={() =>
-                             openModal(
-                               `/projects/${project.image_key}/${image.path}`
+                             openModal(index,
+                               project.images
                              )
                            }
                            key={`project${project.name}-image${index}`}
@@ -84,9 +132,9 @@ const openModal = (img) => {
                      </a>
                    </div>
                  </div>
-               </li>
+               </div>
              ))}
-           </ul>
+           </div>
          </div>
        </>
      );
