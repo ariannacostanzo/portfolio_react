@@ -89,6 +89,7 @@ const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
                <div
                  key={`project${i}`}
                  className="project-card w-full md:w-4/5 lg:w-3/5 relative"
+                 id={project.image_key}
                >
                  {/* carosello  */}
                  <figure className="project-image relative">

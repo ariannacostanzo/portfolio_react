@@ -1,6 +1,5 @@
 .projects-list {
   .project-card {
-    background-color: #201844;
     border-image-slice: 1;
     border-width: 1px;
     // width: 60%;
@@ -14,8 +13,8 @@
 
   .project-image {
     width: 100%;
-    background-color: grey;
     overflow: hidden;
+    background-color: #352e743a;
     cursor: pointer;
   }
 
@@ -29,6 +28,12 @@
 
   .project-info {
     padding: 1rem;
+
+    background-color: black;
+    // pallini
+    // background-image: radial-gradient(rgba(255, 255, 255, 0.089) 2px, transparent 0);
+    // background-size: 50px 50px;
+    // background-position: -5px -5px
 
     p {
       font-size: 15px;
@@ -55,14 +60,15 @@
         justify-content: start;
 
         li {
+          box-shadow: 3px 3px 1px #125042;
           background-color: #10d3b3;
           padding: 5px 10px;
           border-radius: 15px;
           text-transform: uppercase;
-          color: #ffffff;
+          color: black;
           font-size: 14px;
           font-weight: bold;
-          text-shadow: 1px 1px 2px black;
+          text-shadow: 0px 0px 1px #000000;
         }
       }
     }
@@ -133,6 +139,5 @@
         font-size: 16px;
       }
     }
-
   }
 }

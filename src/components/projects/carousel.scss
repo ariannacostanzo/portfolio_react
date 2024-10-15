@@ -1,11 +1,18 @@
-// modificati 
-
-
+// modificati
 
 .carousel .control-dots .dot {
   background: #ec4899;
   width: 10px;
   height: 10px;
+  box-shadow: 2px 2px 2px black;
+}
+
+@media screen and (min-width: 760px) {
+  .carousel .control-dots .dot {
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 2px 2px black;
+  }
 }
 
 .carousel .control-next.control-arrow:before {
@@ -36,6 +43,12 @@
   justify-content: center;
 }
 
-.thumbs-wrapper .axis-vertical {
+.box {
+  background-color: black;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.carousel .thumbs-wrapper {
   display: none;
 }
