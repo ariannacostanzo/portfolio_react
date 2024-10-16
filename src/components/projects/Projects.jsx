@@ -5,7 +5,7 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { faCircleLeft } from "@fortawesome/free-solid-svg-icons";
@@ -15,11 +15,13 @@ const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImagesArray, setCurrentImagesArray] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMediumScreen, setIsMediumScreen] = useState(true);
 
   //funzioni
 
   //apro la modale
   const openModal = (index, array) => {
+    if (!isMediumScreen) return;
     setIsModalOpen(true);
     setCurrentImagesArray(array);
     setCurrentIndex(index);
@@ -30,6 +32,11 @@ const Projects = () => {
     setIsModalOpen(false);
     setCurrentImagesArray([]);
     setCurrentIndex(0);
+  };
+
+  //tengo conto di quando lo schermo di dimensioni medie
+  const handleResize = () => {
+    setIsMediumScreen(window.innerWidth >= 768);
   };
 
   //carosello sul click delle immagini
@@ -57,6 +64,14 @@ const Projects = () => {
 
   //recuperare il percorso dell'immagine attualmente nel carosello
   const currentImageUrl = `${currentImagesArray[currentIndex]?.path}`;
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>

@@ -23,6 +23,7 @@ const projects = [
       "node.js",
       "express",
       "prisma",
+      "tailwind",
     ],
     images: [
       {
@@ -75,6 +76,7 @@ const projects = [
       "scss",
       "php",
       "javascript",
+      "tailwind",
     ],
     images: [
       {
