@@ -3,8 +3,6 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Icon from "../icon/Icon";
 
-// fare uyna lista fissa dei progetti con i link
-
 const ContactMe = () => {
   return (
     <>
@@ -25,6 +23,7 @@ const ContactMe = () => {
         </div>
         <div className="text-center mb-5">
           <h4 className="color-green my-5"> Social</h4>
+          {/* icone  */}
           <div className="icons-container">
             <a
               href="https://www.linkedin.com/in/arianna-costanzo-6267a0233/"

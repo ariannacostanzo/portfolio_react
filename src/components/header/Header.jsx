@@ -1,3 +1,4 @@
+//import
 import { useState, useEffect } from "react";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,22 +18,31 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
 
-  // Functions
+  // Funzioni
+
+  //tengo conto di quando lo schermo di dimensioni medie
   const handleResize = () => {
     setIsMediumScreen(window.innerWidth >= 768);
   };
 
-  const handleScrollTo = (e, id) => {
+  //prevengo il comportamento delle anchor per spostarmi nella pagina in maniera più morbida
+  //se si tratta di una <a> con una sottolista mostro solo la sottolista
+  const handleScrollTo = (e, id, clickEvent = false) => {
     e.preventDefault();
     e.stopPropagation();
-    const target = document.getElementById(id);
-    const offset = target.getBoundingClientRect().top + window.scrollY - 100;
-    window.scrollTo({
-      top: offset,
-      behavior: "smooth",
-    });
+    if (clickEvent) {
+      setIsNavVisible(!isNavVisible);
+    } else {
+      const target = document.getElementById(id);
+      const offset = target.getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
   };
 
+  //tengo conto dello scroll Y
   const handleScrollY = () => {
     if (window.scrollY > 120) {
       setIsScrolled(true);
@@ -104,9 +114,7 @@ const Header = () => {
                 <li className="mb-3">
                   <a
                     href="#projects"
-                    onClick={(e) => handleScrollTo(e, "projects")}
-                    onMouseOver={() => setIsNavVisible(true)}
-                    onMouseLeave={() => setIsNavVisible(false)}
+                    onClick={(e) => handleScrollTo(e, "projects", true)}
                   >
                     Progetti
                     {!isNavVisible ? (
@@ -121,11 +129,7 @@ const Header = () => {
                       ></FontAwesomeIcon>
                     )}
                     {isNavVisible && (
-                      <div
-                        className="common-dropdown dropdown-navbar-side"
-                        onMouseOver={() => setIsNavVisible(true)}
-                        onMouseLeave={() => setIsNavVisible(false)}
-                      >
+                      <div className="common-dropdown dropdown-navbar-side">
                         {/* sottolista  */}
                         <ul>
                           {projects.map((project, i) => (
@@ -181,9 +185,7 @@ const Header = () => {
                 <li className="relative">
                   <a
                     href="#projects"
-                    onClick={(e) => handleScrollTo(e, "projects")}
-                    onMouseOver={() => setIsNavVisible(true)}
-                    onMouseLeave={() => setIsNavVisible(false)}
+                    onClick={(e) => handleScrollTo(e, "projects", true)}
                   >
                     Progetti
                     {!isNavVisible ? (
@@ -198,11 +200,7 @@ const Header = () => {
                       ></FontAwesomeIcon>
                     )}
                     {isNavVisible && (
-                      <div
-                        className="common-dropdown dropdown-navbar"
-                        onMouseOver={() => setIsNavVisible(true)}
-                        onMouseLeave={() => setIsNavVisible(false)}
-                      >
+                      <div className="common-dropdown dropdown-navbar">
                         {/* sottolista  */}
                         <ul>
                           {projects.map((project, i) => (

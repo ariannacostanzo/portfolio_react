@@ -1,3 +1,4 @@
+//import
 import "./aboutMe.scss";
 import aboutMeImage from "../../assets/images/foto_curriculum.jpg";
 import { faIdCardClip } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +22,7 @@ const AboutMe = () => {
                 className="w-52"
               />
             </div>
+            {/* profilo  */}
             <div className="info-about-me max-w-xl text-center md:text-start">
               <h3 className="color-green">Junior Full Stack Web Developer</h3>
               <p>
@@ -34,22 +36,18 @@ const AboutMe = () => {
                 <span className="color-purple"> Python</span> ,{" "}
                 <span className="color-purple">HTML </span>,{" "}
                 <span className="color-purple">CSS</span> e{" "}
-                <span className="color-purple">JavaScript</span>, gettando
-                solide basi per la mia carriera. Successivamente, ho completato
-                il corso da full Stack Web Developer di{" "}
-                <span className="color-purple">Boolean</span> e sono stata
-                selezionata per il corso di{" "}
-                <span className="color-purple">Experis su Java</span>.
-                Parallelamente alla mia formazione ufficiale, ho intrapreso lo
-                studio autonomo di tecnologie come{" "}
-                <span className="color-purple">Node.js</span>,{" "}
+                <span className="color-purple">JavaScript</span>. Questo mi ha
+                portato a voler approfondire le tematiche e ad iscrivermi, in
+                primis, ad un corso da full Stack Web Developer e,
+                successivamente, ad un corso su Java. Parallelamente alla mia
+                formazione ufficiale, ho intrapreso lo studio autonomo di
+                tecnologie come <span className="color-purple">Node.js</span>,{" "}
                 <span className="color-purple">Prisma</span> ,{" "}
                 <span className="color-purple">Express</span> e{" "}
-                <span className="color-purple">React</span> , ampliando
-                ulteriormente le mie competenze e arricchendo il mio percorso
-                come sviluppatrice full-stack. Ora, con entusiasmo e dedizione,
-                sono pronta a mettere in pratica le mie competenze, affrontare
-                nuove sfide e crescere in un ambiente lavorativo dinamico.
+                <span className="color-purple">React</span>. Ora, con entusiasmo
+                e dedizione, sono pronta a mettere in pratica le mie competenze,
+                affrontare nuove sfide e crescere in un ambiente lavorativo
+                dinamico.
               </p>
               <div className="flex items-center justify-between py-5">
                 {/* icone  */}
@@ -65,12 +63,11 @@ const AboutMe = () => {
                   </a>
                 </div>
 
+                {/* buttons  */}
                 <div className="buttons-container flex flex-col md:flex-row gap-4">
-                  {/* contact button  */}
                   <a href="mailto:costanzo.arianna@outlook.it">
                     <Button icon={faIdCardClip} text="Contattami"></Button>
                   </a>
-                  {/* download cv button  */}
                   <a href="/cv_Arianna_Costanzo.pdf" download>
                     <Button icon={faDownload} text="Scarica CV"></Button>
                   </a>

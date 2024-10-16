@@ -2,7 +2,6 @@
   .project-card {
     border-image-slice: 1;
     border-width: 1px;
-    // width: 60%;
     border-image-source: linear-gradient(
       to top,
       rgba(128, 128, 128, 0.342),
@@ -30,10 +29,6 @@
     padding: 1rem;
 
     background-color: black;
-    // pallini
-    // background-image: radial-gradient(rgba(255, 255, 255, 0.089) 2px, transparent 0);
-    // background-size: 50px 50px;
-    // background-position: -5px -5px
 
     p {
       font-size: 15px;

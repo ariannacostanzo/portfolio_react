@@ -24,6 +24,12 @@ header {
       transition: 0.3s ease;
       cursor: pointer;
 
+      a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+
       &:hover {
         color: #ec4899;
       }
@@ -89,8 +95,12 @@ header {
   li {
     transition: 0.3s ease;
     cursor: pointer;
-    margin-bottom: 5px;
+
     border-bottom: 1px solid white;
+
+    a {
+      padding: 5px 0;
+    }
 
     &:hover {
       color: #ec4899;
@@ -103,7 +113,7 @@ header {
   @extend .common-dropdown;
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 40px;
   width: 100px;
   border-top: 1px solid white;
   padding: 10px 5px 5px 5px;

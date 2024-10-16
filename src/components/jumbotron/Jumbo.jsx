@@ -1,8 +1,10 @@
-import { useState } from 'react';
-import './jumbo.scss'
-import { useEffect } from 'react';
+//import
+import { useState } from "react";
+import "./jumbo.scss";
+import { useEffect } from "react";
 
 const Jumbo = () => {
+  //states
   const words = ["Sviluppatrice", "Gamer", "Creator", "JuniorDeveloper"];
   const [emptyText, setEmptyText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +29,7 @@ const Jumbo = () => {
             switchingTimeout = setTimeout(() => {
               setIsDeleting(true);
               startTyping();
-            }, 1000); 
+            }, 1000);
           }
         } else {
           //fase cancellazione, se non ho ancora finito di cancellare la parola, rimuovo la currentletter
@@ -41,10 +43,10 @@ const Jumbo = () => {
             setCurrentIndex((currentIndex + 1) % words.length);
             switchingTimeout = setTimeout(() => {
               startTyping();
-            }, 500); 
+            }, 500);
           }
         }
-      }, 200); 
+      }, 200);
     };
 
     startTyping();
@@ -53,8 +55,8 @@ const Jumbo = () => {
       clearInterval(typingInterval);
       clearTimeout(switchingTimeout);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentLetter, isDeleting, currentIndex]); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentLetter, isDeleting, currentIndex]);
 
   return (
     <>
@@ -70,5 +72,5 @@ const Jumbo = () => {
       </section>
     </>
   );
-}
+};
 export default Jumbo;

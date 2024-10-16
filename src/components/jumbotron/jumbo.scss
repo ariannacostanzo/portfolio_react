@@ -9,13 +9,13 @@
 
     h1 {
       font-size: 40px;
-        font-weight: bold;
+      font-weight: bold;
     }
 
     @media screen and (min-width: 760px) {
       h1 {
-          font-size: 60px;
-        }
+        font-size: 60px;
+      }
     }
 
     span {
@@ -24,7 +24,7 @@
 
       &.color-purple::after {
         position: absolute;
-        content: '';
+        content: "";
         top: 0;
         right: -12px;
         width: 10px;
@@ -32,6 +32,5 @@
         background-color: #ec4899;
       }
     }
-
   }
 }
