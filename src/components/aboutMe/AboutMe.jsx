@@ -33,7 +33,7 @@ const AboutMe = () => {
                 seguito una vera passione per lo{" "}
                 <span className="color-purple">sviluppo web</span>. Ho dedicato
                 molti mesi allo studio da autodidatta di
-                <span className="color-purple"> Python</span> ,{" "}
+                <span className="color-purple"> Python</span>,{" "}
                 <span className="color-purple">HTML </span>,{" "}
                 <span className="color-purple">CSS</span> e{" "}
                 <span className="color-purple">JavaScript</span>. Questo mi ha
@@ -42,7 +42,7 @@ const AboutMe = () => {
                 successivamente, ad un corso su Java. Parallelamente alla mia
                 formazione ufficiale, ho intrapreso lo studio autonomo di
                 tecnologie come <span className="color-purple">Node.js</span>,{" "}
-                <span className="color-purple">Prisma</span> ,{" "}
+                <span className="color-purple">Prisma</span>,{" "}
                 <span className="color-purple">Express</span> e{" "}
                 <span className="color-purple">React</span>. Ora, con entusiasmo
                 e dedizione, sono pronta a mettere in pratica le mie competenze,
