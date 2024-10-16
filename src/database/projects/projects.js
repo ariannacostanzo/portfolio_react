@@ -114,7 +114,7 @@ const projects = [
   {
     name: "Pixel Art app",
     description: `Ho sviluppato questa applicazione in seguito allo studio della libreria di Python, Tkinter. 
-                Data la mia grande passione per la <span class="color-purple">pixel art</span> è stato un vero divertimento sviluppare questa applicazione. <br><br>L'app permette
+                Data la mia grande passione per la <span class="color-purple">pixel art</span> è stato un vero divertimento svilupparla. <br><br>L'app permette
                 di scegliere il <span class="color-purple">colore</span> che verrà visualizzato su un <span class="color-purple">riquadro</span> accanto al <span class="color-purple">pulsante colore</span> ed iniziare a disegnare all'interno delle <span class="color-purple">celle</span>, sia colorandole ad una ad una sia scorrendo con il mouse,
                 stesso funzionamento avviene per la <span class="color-purple">cancellazione</span>.<br><br> Nel <span class="color-purple">menù</span> in alto a sinistra è possibile iniziare un nuovo <span class="color-purple">disegno</span>, aprire un <span class="color-purple">disegno</span> che era stato salvato
                 precedentemente oppure salvare il <span class="color-purple">disegno</span> attuale per poterci lavorare successivamente.<br><br>Ho anche implementato la possibilità di cambiare la dimensione delle <span class="color-purple">celle</span> così da scegliere se disegnare un soggetto più piccolo o più grande.
