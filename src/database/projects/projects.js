@@ -1,5 +1,37 @@
 const projects = [
   {
+    name: "Pixel Art Canvas",
+    description: `Questo <span class="color-purple">tool di pixel art</span> è un progetto personale che ho sviluppato per creare e modificare disegni pixelati, con l'opzione di <span class="color-purple">colorare</span> cliccando su singole celle o tenendo premuto il mouse. <br><br> L'applicazione consente agli utenti di <span class="color-purple">selezionare</span> colori, <span class="color-purple">cancellare</span> pixel, <span class="color-purple">modificare</span> la dimensione della griglia e <span class="color-purple">salvare</span> i disegni in formato PNG.`,
+    is_visible: 1,
+    link: "https://github.com/ariannacostanzo/pixel_art_react",
+    webLink: "https://pixel-art-canvas-app.netlify.app/",
+    image_key: "pixel-art-canvas",
+    techs: ["React", "html", "css", "scss", "javascript", "tailwind"],
+    images: [
+      {
+        path: "pixel-art-canvas (1).png",
+      },
+      {
+        path: "pixel-art-canvas (2).png",
+      },
+      {
+        path: "pixel-art-canvas (3).png",
+      },
+      {
+        path: "pixel-art-canvas (4).png",
+      },
+      {
+        path: "pixel-art-canvas (5).png",
+      },
+      {
+        path: "pixel-art-canvas (6).png",
+      },
+      {
+        path: "pixel-art-canvas (7).png",
+      },
+    ],
+  },
+  {
     name: "Videogames Blog",
     description: `Questo <span class="color-purple">blog di videogiochi</span> è un progetto personale che 
     ho sviluppato, 
@@ -363,61 +395,61 @@ const projects = [
       },
     ],
   },
-  {
-    name: "Progetti in Python",
-    description: `Vari progetti con cui mi sono divertita a programmare in Python:
-                <br><br>Un <span class="color-purple">gioco a quiz</span> su Game of Thrones dove si deve riconoscere il personaggio dal nome mostrato. L'obbiettivo è fare più punti possibili e superare il tuo punteggio migliore;
-                <br><br> Un <span class="color-purple">gioco a livelli</span>, in cui il giocatore si muove in avanti, evitando i nemici, per raggiungere il tesoro e passare al prossimo livello. Ogni livello successivo i nemici si muoveranno più velocemente oppure aumenteranno di numero;
-                <br><br> Ed infine una <span class="color-purple">calcolatrice</span> che può eseguire operazioni matematiche elementari o più complesse.`,
-    is_visible: 1,
-    image_key: "progetti-in-python",
-    techs: ["Python", "Tkinter"],
-    link: "https://github.com/ariannacostanzo/laravel-dc-comics",
-    images: [
-      {
-        path: "progetti-in-python (1).png",
-      },
-      {
-        path: "progetti-in-python (2).png",
-      },
-      {
-        path: "progetti-in-python (3).png",
-      },
-      {
-        path: "progetti-in-python (4).png",
-      },
-      {
-        path: "progetti-in-python (5).png",
-      },
-      {
-        path: "progetti-in-python (6).png",
-      },
-      {
-        path: "progetti-in-python (7).png",
-      },
-      {
-        path: "progetti-in-python (8).png",
-      },
-      {
-        path: "progetti-in-python (9).png",
-      },
-      {
-        path: "progetti-in-python (10).png",
-      },
-      {
-        path: "progetti-in-python (11).png",
-      },
-      {
-        path: "progetti-in-python (12).png",
-      },
-      {
-        path: "progetti-in-python (13).png",
-      },
-      {
-        path: "progetti-in-python (14).png",
-      },
-    ],
-  },
+  // {
+  //   name: "Progetti in Python",
+  //   description: `Vari progetti con cui mi sono divertita a programmare in Python:
+  //               <br><br>Un <span class="color-purple">gioco a quiz</span> su Game of Thrones dove si deve riconoscere il personaggio dal nome mostrato. L'obbiettivo è fare più punti possibili e superare il tuo punteggio migliore;
+  //               <br><br> Un <span class="color-purple">gioco a livelli</span>, in cui il giocatore si muove in avanti, evitando i nemici, per raggiungere il tesoro e passare al prossimo livello. Ogni livello successivo i nemici si muoveranno più velocemente oppure aumenteranno di numero;
+  //               <br><br> Ed infine una <span class="color-purple">calcolatrice</span> che può eseguire operazioni matematiche elementari o più complesse.`,
+  //   is_visible: 1,
+  //   image_key: "progetti-in-python",
+  //   techs: ["Python", "Tkinter"],
+  //   link: "https://github.com/ariannacostanzo/laravel-dc-comics",
+  //   images: [
+  //     {
+  //       path: "progetti-in-python (1).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (2).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (3).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (4).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (5).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (6).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (7).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (8).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (9).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (10).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (11).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (12).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (13).png",
+  //     },
+  //     {
+  //       path: "progetti-in-python (14).png",
+  //     },
+  //   ],
+  // },
   // {
   //   name: "Spotify",
   //   description: `Un'imitazione di Spotify sviluppata utilizzando <span class="color-purple">solo HTML e CSS</span>, progettata per mettere in mostra le potenzialità del design web senza <span class="color-purple">JavaScript</span> o <span class="color-purple">backend</span>. L'applicazione offre un layout simile a quello di Spotify, con sezioni per artisti, album e playlist, puntando su un design curato nei dettagli per un'esperienza visivamente accattivante e moderna.`,

@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.scss";
 import { useEffect, useState } from "react";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faEye } from "@fortawesome/free-solid-svg-icons";
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { faCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import Button from "../button/Button";
@@ -158,6 +158,14 @@ const Projects = () => {
                 </div>
                 {/* link a github  */}
                 <div className="flex justify-end items-center mt-5">
+                  {project.webLink && (
+                    <a href={project.webLink} target="_blank" className="mr-2">
+                      <Button
+                        icon={faEye}
+                        text="Visita Sito"
+                      ></Button>
+                    </a>
+                  )}
                   <a href={project.link} target="_blank">
                     <Button
                       icon={faSquareGithub}
