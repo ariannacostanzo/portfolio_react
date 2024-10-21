@@ -29,6 +29,9 @@ const projects = [
       {
         path: "pixel-art-canvas (7).png",
       },
+      {
+        path: "pixel-art-canvas (8).png",
+      },
     ],
   },
   {
