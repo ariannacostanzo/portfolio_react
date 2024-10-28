@@ -28,6 +28,10 @@ const skills = [
     image_path: "skills/java.png",
   },
   {
+    name: "php",
+    image_path: "skills/php.png",
+  },
+  {
     name: "laravel",
     image_path: "skills/laravel.png",
   },
