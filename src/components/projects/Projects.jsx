@@ -109,7 +109,7 @@ const Projects = () => {
           {projects.map((project, i) => (
             <div
               key={`project${i}`}
-              className="project-card w-full md:w-4/5 lg:w-3/5 relative"
+              className="project-card w-full md:w-4/5 lg:w-3/5 relative "
               id={project.image_key}
             >
               {/* carosello  */}

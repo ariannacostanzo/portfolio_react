@@ -9,6 +9,7 @@ body {
   background: radial-gradient(circle, #120d27 0%, rgba(0, 0, 0, 1) 100%);
   background-repeat: no-repeat;
   font-family: "Figtree", sans-serif;
+  overflow-x: hidden;
 }
 
 /* utils  */
@@ -26,4 +27,37 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+/* animations  */
+
+.animation-show {
+  animation: autoShow;
+  animation-timeline: view(70% -5%);
+
+}
+
+@keyframes autoShow{
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  } to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animation-slide {
+  animation: autoSlide;
+  animation-timeline: view(100% -20%);
+}
+
+@keyframes autoSlide{
+  from {
+    opacity: 0;
+    transform: translateX(-1200px) ;
+  } to {
+    opacity: 1;
+    transform: translateX(0) ;
+  }
 }

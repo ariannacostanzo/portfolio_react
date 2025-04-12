@@ -4,7 +4,7 @@ import skills from "../../database/skills/skills.js";
 const Skills = () => {
   return (
     <>
-      <ul className="container mx-auto flex items-center justify-center gap-3 flex-wrap text-center">
+      <ul className="container mx-auto flex items-center justify-center gap-3 flex-wrap text-center ">
         {skills.map((skill, i) => (
           <li key={`skill${i}`} className="skill-card">
             <h3>{skill.name}</h3>

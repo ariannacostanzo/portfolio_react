@@ -14,9 +14,9 @@ function App() {
       <Header></Header>
       <Jumbo></Jumbo>
       <Divisor sectionName="su di me" idName="about"></Divisor>
-      <AboutMe></AboutMe>
+      <AboutMe ></AboutMe>
       <Divisor sectionName="abilità" idName="skills"></Divisor>
-      <Skills></Skills>
+      <Skills ></Skills>
       <Divisor sectionName="progetti" idName="projects"></Divisor>
       <Projects></Projects>
       <Divisor sectionName="contattami" idName="contact"></Divisor>

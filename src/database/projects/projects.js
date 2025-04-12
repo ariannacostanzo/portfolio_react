@@ -35,6 +35,26 @@ const projects = [
     ],
   },
   {
+    name: "Meal Calendar",
+    description: `Questo <span class="color-purple">calendario dieta</span> è un progetto che ho sviluppato per pianificare e tracciare i pasti della dieta. L'applicazione permette agli utenti di <span class="color-purple">inserire</span> i pasti giornalieri, <span class="color-purple">salvarli</span> localmente nel browser, <span class="color-purple">importare</span> una dieta in formato JSON e <span class="color-purple">esportare</span> i pasti in formato JSON per un utilizzo futuro.`,
+    is_visible: 1,
+    link: "https://github.com/ariannacostanzo/meal-calendar",
+    webLink: "https://meal-calendar-diet.netlify.app/",
+    image_key: "meal-calendar",
+    techs: ["React", "html", "css", "scss", "javascript", "tailwind"],
+    images: [
+      {
+        path: "meal-calendar (1).png",
+      },
+      {
+        path: "meal-calendar (2).png",
+      },
+      {
+        path: "meal-calendar (3).png",
+      },
+    ],
+  },
+  {
     name: "Videogames Blog",
     description: `Questo <span class="color-purple">blog di videogiochi</span> è un progetto personale che 
     ho sviluppato, 
@@ -228,7 +248,6 @@ const projects = [
       },
     ],
   },
-
   {
     name: "Deliveboo backend",
     description: `<span class="color-purple">Progetto finale</span> del corso <span class="color-purple">Boolean</span>, svolto in un team da 5 persone di cui ho fatto parte. Questa è il <span class="color-purple">back Office</span> 
@@ -483,4 +502,4 @@ const projects = [
   // },
 ];
 
-export default projects
+export default projects;
