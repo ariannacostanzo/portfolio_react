@@ -35,6 +35,54 @@ const projects = [
     ],
   },
   {
+    name: "Aris Pedigree",
+    description: `Il sito <span class="color-purple">ArisPedigree</span> offre un database gratuito con report genealogici per cani di tutte le razze provenienti da tutto il mondo. Gli utenti possono <span class="color-purple">esplorare</span> il nostro elenco di cani e sfogliare i cani disponibili nel database oppure utilizzare la <span class="color-purple">pagina di ricerca</span> per trovare cani che soddisfano i propri criteri. Inoltre, è possibile <span class="color-purple">iscriversi</span> e <span class="color-purple">registrare</span> cani e generazioni per visualizzare l'<span class="color-purple">albero genealogico</span> completo delle razze selezionate.`,
+    is_visible: 1,
+    link: "",
+    webLink: "https://arispedigree.com/",
+    image_key: "aris-pedigree",
+    techs: [
+      "React",
+      "html",
+      "css",
+      "scss",
+      "javascript",
+      "tailwind",
+      "node.js",
+      "express",
+      "prisma",
+    ],
+    images: [
+      {
+        path: "aris-pedigree (1).png",
+      },
+      {
+        path: "aris-pedigree (2).png",
+      },
+      {
+        path: "aris-pedigree (3).png",
+      },
+      {
+        path: "aris-pedigree (4).png",
+      },
+      {
+        path: "aris-pedigree (5).png",
+      },
+      {
+        path: "aris-pedigree (6).png",
+      },
+      {
+        path: "aris-pedigree (7).png",
+      },
+      {
+        path: "aris-pedigree (8).png",
+      },
+      {
+        path: "aris-pedigree (9).png",
+      },
+    ],
+  },
+  {
     name: "Meal Calendar",
     description: `Questo <span class="color-purple">calendario</span> è un progetto che ho sviluppato per pianificare e tracciare i pasti della dieta. L'applicazione permette agli utenti di <span class="color-purple">inserire</span> i pasti giornalieri, <span class="color-purple">salvarli</span> localmente nel browser, <span class="color-purple">importare</span> una dieta in formato JSON e <span class="color-purple">esportare</span> i pasti in formato JSON per un utilizzo futuro.`,
     is_visible: 1,

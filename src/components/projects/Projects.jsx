@@ -160,18 +160,17 @@ const Projects = () => {
                 <div className="flex justify-end items-center mt-5">
                   {project.webLink && (
                     <a href={project.webLink} target="_blank" className="mr-2">
+                      <Button icon={faEye} text="Visita Sito"></Button>
+                    </a>
+                  )}
+                  {project.link && (
+                    <a href={project.link} target="_blank">
                       <Button
-                        icon={faEye}
-                        text="Visita Sito"
+                        icon={faSquareGithub}
+                        text="Vedi su Github"
                       ></Button>
                     </a>
                   )}
-                  <a href={project.link} target="_blank">
-                    <Button
-                      icon={faSquareGithub}
-                      text="Vedi su Github"
-                    ></Button>
-                  </a>
                 </div>
               </div>
             </div>
