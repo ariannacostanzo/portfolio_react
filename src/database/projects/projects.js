@@ -36,12 +36,12 @@ const projects = [
   },
   {
     name: "Meal Calendar",
-    description: `Questo <span class="color-purple">calendario dieta</span> è un progetto che ho sviluppato per pianificare e tracciare i pasti della dieta. L'applicazione permette agli utenti di <span class="color-purple">inserire</span> i pasti giornalieri, <span class="color-purple">salvarli</span> localmente nel browser, <span class="color-purple">importare</span> una dieta in formato JSON e <span class="color-purple">esportare</span> i pasti in formato JSON per un utilizzo futuro.`,
+    description: `Questo <span class="color-purple">calendario</span> è un progetto che ho sviluppato per pianificare e tracciare i pasti della dieta. L'applicazione permette agli utenti di <span class="color-purple">inserire</span> i pasti giornalieri, <span class="color-purple">salvarli</span> localmente nel browser, <span class="color-purple">importare</span> una dieta in formato JSON e <span class="color-purple">esportare</span> i pasti in formato JSON per un utilizzo futuro.`,
     is_visible: 1,
     link: "https://github.com/ariannacostanzo/meal-calendar",
     webLink: "https://meal-calendar-diet.netlify.app/",
     image_key: "meal-calendar",
-    techs: ["React", "html", "css", "scss", "javascript", "tailwind"],
+    techs: ["React", "html", "css", "scss", "javascript", "typescript"],
     images: [
       {
         path: "meal-calendar (1).png",
